@@ -1,6 +1,6 @@
 package com.Obsquara.SeleniumProject.FirstWeek;
 
-public class NavigationCommands extends CreateMethods {
+public class NavigationCommands extends BrowserInitialization1 {
 	public void navigationCommands() {
 		driver.navigate().to("https://www.amazon.in/");
 		driver.navigate().back();
