@@ -20,6 +20,7 @@ public class InputForm extends BrowserInitialization1
 		inputvalueb.sendKeys("50");
 		WebElement getvaluebutton = driver.findElement(By.id("button-two"));
 		getvaluebutton.click();
+		
 	}
 
 	public static void main(String[] args) {
