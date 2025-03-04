@@ -92,7 +92,7 @@ public class Locators extends BrowserInitialization1 {
 		
 		
 		
-		//Syntax : //tagnem[text()= 'text messsage')]
+		//Syntax : //tagname[text()= 'text messsage')]
 		WebElement textxpath1 = driver.findElement(By.xpath("//button[text()='Show Message']"));
 		WebElement textxpath2 = driver.findElement(By.xpath("//button[text()='Get Total']"));
 		WebElement textxpath3 = driver.findElement(By.xpath("//div[text()='Your Message : ']"));

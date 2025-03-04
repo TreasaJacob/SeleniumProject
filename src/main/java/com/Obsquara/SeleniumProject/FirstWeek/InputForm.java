@@ -5,9 +5,13 @@ import org.openqa.selenium.WebElement;
 
 public class InputForm extends BrowserInitialization1 
 {
-	public void inputMessage() {
+	public void navigate() {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
+	}
+	public void inputMessage() {
+		
 		WebElement messagefield = driver.findElement(By.id("single-input-field"));
+		System.out.println(messagefield.isEnabled());
 		messagefield.sendKeys("Hello");
 		WebElement sendmessagebutton = driver.findElement(By.id("button-one"));
 		sendmessagebutton.click();
@@ -22,10 +26,12 @@ public class InputForm extends BrowserInitialization1
 		getvaluebutton.click();
 		
 	}
+	
 
 	public static void main(String[] args) {
 		InputForm ipform = new InputForm();
 		ipform.browserInitialization();
+		ipform.navigate();
 		ipform.inputMessage();
 		ipform.getTotal();
 

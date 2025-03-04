@@ -39,6 +39,13 @@ public class WebDriverUniversity {
 		WebElement radio1 = driver.findElement(By.xpath("//input[@value='green']"));
 		radio1.click();
 	}
+	public void selected() {
+		WebElement radiobtn1 = driver.findElement(By.xpath("//input[@value='lettuce']"));
+		//radiobtn1.click();
+		System.out.println(radiobtn1.isSelected());
+		System.out.println(radiobtn1.isDisplayed());
+		System.out.println(radiobtn1.isEnabled());
+	}
 
 	public static void main(String[] args) {
 		WebDriverUniversity sample = new WebDriverUniversity();
@@ -46,6 +53,7 @@ public class WebDriverUniversity {
 		sample.dropdown();
 		sample.checkbox();
 		sample.radiobtn();
+		sample.selected();
 
 	}
 
